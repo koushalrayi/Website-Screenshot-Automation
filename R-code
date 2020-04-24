@@ -1,0 +1,7 @@
+install.packages("webshot")
+library(webshot)
+
+webshot::install_phantomjs()
+
+#Sample webpage: WHO
+webshot("https://www.who.int/", "WHO_homepage.pdf", delay = 30) 
